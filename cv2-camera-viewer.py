@@ -61,7 +61,7 @@ class Camera:
         while self._open:
             cv2.imshow("{self._device_pth}", self.get_image())
             if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
+                return
 
 
 if __name__ == "__main__":
