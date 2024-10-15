@@ -3,10 +3,6 @@ import time
 import cv2
 
 
-WIDTH, HEIGHT = 640, 480
-FRAME_RATE = 30
-
-
 class Camera:
     def __init__(self, device="/dev/video0", size=(640, 480)):
         self._device_pth = device
